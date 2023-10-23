@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- JavaScript -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
+    <!-- Semantic UI theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css" />
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css" />
+    <title>Simulador de Prestamo</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="title-name" class="title_name"> </h1>
+    </div>
+    <div class="containercotizacion">
+        <div class="quotes-container">
+            <div class="quotes">
+
+            </div>
+        </div>
+    </div>
+    <div id="popup">
+        <div class="popup-content">
+            <h2>Ingresa tu nombre:</h2>
+            <input type="text" id="input-name">
+            <h2>Ingresa tu documento:</h2>
+            <input type="text" id="input-doc">
+            <h2>Ingresa tu codigo de descuento:</h2>
+            <input type="text" id="input-desc">
+            <button id="submit-name">Aceptar</button>
+        </div>
+    </div>
+    <div class="divlabel">
+        <label for="dom-desc" id="label-desc" class="labeldescuento"></label>
+        <input type="text" id="dom-desc">
+    </div>
+    <div class="form">
+        <div class="calculadora">
+            <h3>Simulador de prestamos</h3>
+            <form class="subform">
+                <div>
+                    <label for="capital">Capital
+                        <input type="text" placeholder="Importe de capital prestado" id="capital">
+                    </label>
+                </div>
+                <div>
+                    <label for="couta">Cuotas
+                        <input type="text" placeholder="Cantidad de cuotas del prestamo" id="couta">
+                    </label>
+                </div>
+                <div>
+                    <label for="interes">Interes
+                        <input type="text" placeholder="Interés del prestamo" id="interes">
+                    </label>
+                </div>
+            </form>
+            <button onclick="calcular();">Calcular</button>
+        </div>
+        <hr>
+        <table class="classtabla">
+            <thead>
+                <tr>
+                    <td>N°</td>
+                    <td>Capital</td>
+                    <td>Interes</td>
+                    <td>Importe a pagar</td>
+                </tr>
+            </thead>
+            <tbody id="tabla">
+            </tbody>
+            <tfoot>
+                <tr class="ft">
+                    <td>Total</td>
+                    <td id="t1"></td>
+                    <td id="t2"></td>
+                    <td id="t3"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="creditos.js"></script>
+</body>
+
+</html>

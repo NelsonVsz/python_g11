@@ -1,0 +1,204 @@
+body {
+  background: url("./mg/fondo.jpg") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+h3 {
+  color: #fdfef7;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title_name {
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+  position: relative;
+  animation-name: animar-title_name;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes animar-title_name {
+  from {
+    transform: rotateZ(-7deg);
+  }
+
+  to {
+    transform: rotateZ(7deg);
+  }
+}
+
+label {
+  color: #fdfef7;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+.divlabel {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.labeldescuento {
+  color: #2c2e53;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+.form {
+  width: 550px;
+  margin: 0 auto;
+  margin-top: 85px;
+  border: 2px;
+}
+
+.subform div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+input {
+  width: 200px;
+  margin-bottom: 10px;
+  padding: 8px;
+  margin-right: -6px;
+  background-color: #fdfef7;
+  border: #173441 1.8px solid;
+}
+
+.calculadora {
+  border: #f1f4f5 2px solid;
+  border-radius: 10px;
+  background-color: #19215e;
+}
+
+button {
+  background-color: #fdfef7;
+  border: #6736ec 1.8px solid;
+  width: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 2px;
+  padding: 10px;
+  margin-left: 45%;
+}
+
+.classtabla {
+  border-collapse: collapse;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #fdfef7;
+  border: #173441 2px solid;
+  margin: 0 auto;
+  width: 500px;
+}
+
+thead {
+  border: #173441 2px solid;
+  font-weight: bold;
+}
+
+tr {
+  border: #173441 2px solid;
+}
+
+td {
+  border: #173441 2px solid;
+}
+
+.ft {
+  background-color: darkseagreen;
+
+}
+
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content h2 {
+  margin-top: 0;
+}
+
+.popup-content input[type="text"] {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: -4px;
+  width: 100%;
+  padding: 5px;
+}
+
+.popup-content button {
+  margin-left: 110px;
+  background-color: #051394;
+  color: #fff;
+  border: none;
+  padding: 7px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.containercotizacion {
+  overflow: hidden;
+  position: relative;
+  background-color: #333;
+}
+
+.quotes-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  animation: marquee 40s linear infinite;
+
+}
+
+.quote {
+  display: flex;
+  height: 50px;
+  width: 65px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  background-color: #090741;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+
+}
+
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
